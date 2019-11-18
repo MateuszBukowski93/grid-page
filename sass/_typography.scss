@@ -1,0 +1,77 @@
+%heading{
+    font-family: $font-display;
+    font-weight: 400;
+    
+}
+
+
+.heading-1 {
+    @extend %heading;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 4rem;
+   
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size:2.5rem;
+    
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size:2rem;
+
+    &--pink{
+        color:$color-primary;
+    }
+    &--blue{
+        color: $color-secondary;
+    }
+}
+.btn{
+    background-color: $color-primary;
+    color:$color-secondary-dark;
+    color:$color-grey-light-1;
+    font-size: 1.6rem;
+    font-family: inherit;
+    font-weight: 700;
+    border: none;
+    padding: 1rem 2rem;
+    transition: all .2s;
+    
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover{
+        transform: translateY(-3px);
+        background-color: $color-primary-light;
+        box-shadow: 0 2rem 6rem rgba($color-secondary-dark, .5);;
+    }
+
+    &:active {
+        color:$color-secondary-dark;
+        outline: none;
+        transform: translateY(2px);
+        box-shadow: 0 2rem 3rem rgba($color-secondary-dark, .2);
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.mb-small{
+    margin-bottom: 2rem;
+}
+.mb-medium{
+    margin-bottom: 3rem;
+}
+.mb-big{
+    margin-bottom: 4rem;
+}
+
+
+
